@@ -2,7 +2,6 @@ def COLOR_MAP = [
     'SUCCESS': 'good', 
     'FAILURE': 'danger',
 ]
-
 pipeline{
     agent any
     tools{
@@ -43,7 +42,7 @@ pipeline{
             }
         }
     }
-    post {
+post {
         always {
             echo 'Slack Notifications.'
             slackSend channel: '#all-the-cloud-hub',
