@@ -1,3 +1,5 @@
+#Pipeline script to trigger the build#
+
 def COLOR_MAP = [
     'SUCCESS': 'good', 
     'FAILURE': 'danger',
